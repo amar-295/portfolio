@@ -1,0 +1,144 @@
+/* ===== Global Styles ===== */
+body {
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb); /* gradient background */
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite; 
+    color: darkslategray;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ===== Navbar ===== */
+nav {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    padding: 15px 0;
+    position: fixed;       /* stays at top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav a {
+    color:#ffffff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* ===== Section Styling ===== */
+section {
+    margin: 100px auto;      /* extra margin so content is below navbar */
+    max-width: 800px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Headings */
+h1 {
+    font-size: 3rem;
+    color: darkred;
+    margin-top: 120px;   /* push down for navbar */
+}
+
+h2 {
+    color: darkred;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: blue;
+}
+
+/* ===== Projects Section ===== */
+#projects p {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: transform 0.3s;
+}
+
+#projects p:hover {
+    transform: scale(1.05);
+    background: #ffe6cc;
+}
+
+/* ===== Skills Section ===== */
+#skills p {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* ===== Contact Section ===== */
+#contact p {
+    font-size: 1.1rem;
+}
+
+/* ===== Footer ===== */
+footer {
+    background: darkred;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.skill{
+    text-align: center;
+    width: 120px;
+}
+
+.skill {
+    font-size: 40px;
+    color: purple;
+    margin-bottom: 10px;
+}
+
+.progress {
+    background: #e0e0e0;
+  border-radius: 20px;
+  height: 12px;
+  overflow: hidden; 
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 20px;
+}
+
+/* Progress Bar Widths */
+.progress-bar.java { width: 85%; background: linear-gradient(90deg,#6a11cb,#2575fc); }
+.progress-bar.cpp { width: 75%; background: linear-gradient(90deg,#ff512f,#dd2476); }
+.progress-bar.html { width: 90%; background: linear-gradient(90deg,#f7971e,#ffd200); }
+.progress-bar.css { width: 80%; background: linear-gradient(90deg,#11998e,#38ef7d); }
+
+/* Side Skills */
+.side-skill .progress { display: none; }
+
+
