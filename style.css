@@ -1,0 +1,163 @@
+/* GLOBAL SETTINGS */
+html { 
+    scroll-behavior: smooth; 
+}
+
+body { 
+    background-color: #050a04; 
+    color: white; 
+    overflow-x: hidden; 
+}
+
+/* ---------------------------------------------------- */
+/* CHROME DEFAULT SIDEBAR (SCROLLBAR) STYLING         */
+/* ---------------------------------------------------- */
+
+/* The entire scrollbar area */
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #050a04; /* Matches body background */
+}
+
+/* The tracking area (background) */
+::-webkit-scrollbar-track {
+    background: #0a1208;
+    border-left: 1px solid #1a2e16;
+}
+
+/* The moving thumb (the bar itself) */
+::-webkit-scrollbar-thumb {
+    background-color: #1f3a18; /* Dark Green base */
+    border: 1px solid #47f425; /* Neon Green Border */
+    border-radius: 0px; /* Square/Brutalist Look */
+    box-shadow: inset 0 0 6px rgba(71, 244, 37, 0.3);
+}
+
+/* Hover state for the thumb */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #47f425; /* Full Neon Green on hover */
+    box-shadow: 0 0 10px #47f425;
+    border-color: #7f0df2; /* Glitch Purple border on hover */
+}
+
+/* ---------------------------------------------------- */
+/* CUSTOM EFFECTS & TEXTURES                           */
+/* ---------------------------------------------------- */
+
+/* Scanline Background Texture */
+.scanlines {
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.2));
+    background-size: 100% 4px;
+    position: fixed; inset: 0; z-index: 50; pointer-events: none; opacity: 0.4;
+}
+
+/* Noise Overlay */
+.noise-bg {
+    position: fixed; inset: 0; z-index: 40; opacity: 0.05; pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E");
+}
+
+/* The "Stripy" Text Texture (Matches Screenshot) */
+.scanline-text {
+    background: repeating-linear-gradient(
+        to bottom,
+        #ffffff 0px,
+        #ffffff 3px,
+        rgba(255, 255, 255, 0.5) 4px
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white; /* Fallback */
+    background-size: 100% 4px;
+}
+
+/* REFINED GLITCH ANIMATION */
+.glitch-text { position: relative; }
+.glitch-text::before, .glitch-text::after {
+    content: attr(data-text); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #050a04;
+    -webkit-text-fill-color: white; 
+}
+.glitch-text::before {
+    left: 3px; text-shadow: -2px 0 #ff00c1; clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim 4s infinite linear alternate-reverse;
+    z-index: -1;
+}
+.glitch-text::after {
+    left: -3px; text-shadow: -2px 0 #00fff9; clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim2 4s infinite linear alternate-reverse;
+    z-index: -2;
+}
+
+/* Keyframes */
+@keyframes glitch-anim {
+    0% { clip: rect(26px, 9999px, 81px, 0); transform: skew(0.6deg); }
+    100% { clip: rect(96px, 9999px, 40px, 0); transform: skew(0.8deg); }
+}
+@keyframes glitch-anim2 {
+    0% { clip: rect(70px, 9999px, 14px, 0); transform: skew(0.5deg); }
+    100% { clip: rect(5px, 9999px, 39px, 0); transform: skew(0.9deg); }
+}
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Utility Classes */
+.font-stretch-ultra { transform: scaleX(1.15); display: inline-block; }
+.text-stroke-1 { -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3); color: transparent; }
+
+/* Custom Component Classes (reusable) */
+.nav-link {
+    @apply text-gray-300 hover:text-neon-green text-sm font-medium transition-colors hover:underline decoration-neon-green decoration-2 underline-offset-4;
+}
+
+.skill-card {
+    @apply relative flex flex-col items-center p-8 bg-white/5 border border-glitch-purple/30 hover:border-neon-green hover:shadow-[0_0_30px_rgba(127,13,242,0.4)] transition-all;
+}
+
+.repo-card {
+    @apply block bg-black/40 border border-[#294922] rounded-lg p-6 hover:border-neon-green hover:shadow-[0_0_20px_rgba(71,244,37,0.2)] transition-all cursor-pointer;
+}
+
+/* Add to style.css (append) */
+.floating-card-shadow {
+  box-shadow:
+    8px 8px 0px rgba(0,0,0,0.85),     /* heavy offset shadow */
+    0 20px 30px rgba(0,0,0,0.35);      /* soft ambient shadow */
+  border-radius: 18px;
+}
+
+/* Top image rounded and crop */
+.card-img-top {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  object-fit: cover;
+  width: 100%;
+  height: 180px;
+}
+
+/* Small badge style (if you want extra polish beyond Tailwind) */
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .3rem .6rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: .75rem;
+}
+
+/* Recipe pale box */
+.recipe-info {
+  border-radius: 8px;
+  padding: 1rem;
+  background: rgba(255, 230, 240, 0.5);
+}
+
+/* Responsive tweak for big hero text overflow (optional fix) */
+@media (max-width: 1024px) {
+  h1.text-giant {
+    font-size: clamp(2.5rem, 8vw, 5.5rem);
+    line-height: 1;
+  }
+}

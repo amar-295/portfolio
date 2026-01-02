@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Amarnath Sharma | Cyber-Reality Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "glitch-purple": "#7f0df2",
+                        "neon-green": "#47f425",
+                        "acid-green": "#ccff00",
+                        "background-dark": "#050a04",
+                        "terminal-bg": "#0a1208",
+                        "surface-dark": "#121212",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "mono": ["Space Mono", "monospace"],
+                    },
+                    animation: {
+                        'glitch': 'glitch 1s linear infinite',
+                        'marquee': 'marquee 20s linear infinite',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="selection:bg-neon-green selection:text-black">
+
+    <div class="scanlines"></div>
+    <div class="noise-bg"></div>
+
+    <header class="fixed top-0 w-full z-50 backdrop-blur-sm border-b border-glitch-purple/30 bg-[#1a1023]/80 px-6 py-4">
+        <div class="max-w-[1440px] mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-glitch-purple text-3xl animate-pulse">terminal</span>
+                <h2 class="text-white text-lg font-bold tracking-widest uppercase glitch-text" data-text="AS_PORTFOLIO">AS_PORTFOLIO</h2>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="nav-link" href="#home">// HOME</a>
+                <a class="nav-link" href="#projects">// PROJECTS</a>
+                <a class="nav-link" href="#skills">// SKILLS</a>
+                <a class="nav-link" href="#contact">// CONTACT</a>
+            </nav>
+            <button class="hidden md:flex group relative overflow-hidden rounded bg-transparent border border-glitch-purple px-5 py-2 text-white transition-all hover:bg-glitch-purple/20">
+                <span class="relative z-10 flex items-center gap-2 text-sm font-bold tracking-wider">
+                    <span class="material-symbols-outlined text-base">download</span> DOWNLOAD_CV.exe
+                </span>
+                <div class="absolute inset-0 -translate-x-full bg-glitch-purple transition-transform duration-300 group-hover:translate-x-0 opacity-20"></div>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="relative pt-32 pb-20 min-h-screen flex flex-col justify-center px-6">
+            <div class="absolute top-1/4 right-0 w-[500px] h-[500px] bg-glitch-purple/20 rounded-full blur-[120px] -z-10"></div>
+            <div class="max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7">
+                    <div class="flex items-center gap-3 mb-2 opacity-70">
+                        <div class="w-3 h-3 bg-neon-green rounded-full animate-pulse"></div>
+                        <span class="font-mono text-neon-green text-sm tracking-widest uppercase">SYSTEM_INITIALIZED</span>
+                    </div>
+                    
+                    <h1 class="text-[5rem] sm:text-[7rem] md:text-[8rem] lg:text-[9rem] font-black leading-[0.85] tracking-tighter uppercase mb-6 glitch-text scanline-text" data-text="AMARNATH SHARMA">
+                        AMARNATH<br/>SHARMA
+                    </h1>
+                    
+                    <div class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 text-lg md:text-2xl font-mono mt-4 text-gray-300">
+                        <span class="border-l-4 border-glitch-purple pl-4">BCA STUDENT</span>
+                        <span class="hidden md:inline text-glitch-purple">|</span>
+                        <span>ASPIRING WEB DEV</span>
+                    </div>
+                    
+                    <div class="relative w-full h-[300px] rounded-lg overflow-hidden border border-white/10 mt-12 group">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-glitch-purple/40 to-transparent z-10"></div>
+                        <div class="w-full h-full bg-gray-900 flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-60">
+                        </div>
+                        <div class="absolute bottom-4 left-4 z-20 font-mono text-xs text-white bg-black/50 backdrop-blur px-2 py-1 border border-white/20">
+                            IMG_SRC: CYBER_REALITY_V2.0
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 w-full">
+                    <div class="bg-[#121212] border-2 border-[#333] rounded-lg shadow-2xl overflow-hidden hover:border-neon-green/50 transition-colors duration-300">
+                        <div class="bg-[#1f1f1f] px-4 py-2 flex items-center justify-between border-b border-[#333]">
+                            <div class="flex gap-2"><div class="w-3 h-3 rounded-full bg-red-500"></div><div class="w-3 h-3 rounded-full bg-yellow-500"></div><div class="w-3 h-3 rounded-full bg-green-500"></div></div>
+                            <div class="text-xs font-mono text-gray-500">root@amarnath-portfolio:~</div>
+                        </div>
+                        <div class="p-6 font-mono text-sm leading-relaxed h-[450px] flex flex-col justify-between relative">
+                            <div class="space-y-4 relative z-10">
+                                <div>
+                                    <p class="text-neon-green mb-1"><span class="text-glitch-purple">root@amarnath:~$</span> whoami</p>
+                                    <p class="text-white ml-4">> A creative developer breaking the grid.</p>
+                                </div>
+                                <div>
+                                    <p class="text-neon-green mb-1"><span class="text-glitch-purple">root@amarnath:~$</span> cat bio.txt</p>
+                                    <p class="text-gray-300 ml-4 border-l border-gray-700 pl-3">I am currently pursuing my Bachelor of Computer Applications (BCA). My passion lies in crafting immersive web experiences that merge aesthetics with functionality.</p>
+                                </div>
+                                <div>
+                                    <p class="text-neon-green mb-1"><span class="text-glitch-purple">root@amarnath:~$</span> ls ./skills</p>
+                                    <div class="grid grid-cols-2 gap-2 ml-4 mt-2 text-gray-300">
+                                        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-yellow-400">folder</span> JavaScript</span>
+                                        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-blue-400">folder</span> React.js</span>
+                                        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-orange-400">folder</span> HTML5/CSS3</span>
+                                        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-cyan-400">folder</span> Tailwind</span>
+                                    </div>
+                                </div>
+                                <div class="mt-4 border-t border-gray-800 pt-2"><p class="text-neon-green"><span class="text-glitch-purple">root@amarnath:~$</span> <span class="animate-pulse">_</span></p></div>
+                            </div>
+                            <a href="#contact" class="w-full bg-neon-green text-black font-bold py-3 px-4 rounded shadow-[4px_4px_0px_0px_white] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_white] transition-all flex items-center justify-center gap-2 uppercase mt-4">
+                                <span class="material-symbols-outlined">mail</span> INITIATE_CONTACT()
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w-full bg-glitch-purple/10 border-y border-glitch-purple/30 mt-16 py-3 overflow-hidden backdrop-blur-md">
+                <div class="flex whitespace-nowrap animate-marquee">
+                    <span class="text-2xl font-display font-bold text-white tracking-widest mx-4 glitch-text" data-text="LEARNING WEB DEVELOPMENT // BREAKING THE GRID // LOADING...">LEARNING WEB DEVELOPMENT // BREAKING THE GRID // LOADING...</span>
+                    <span class="text-2xl font-display font-bold text-white tracking-widest mx-4 glitch-text" data-text="LEARNING WEB DEVELOPMENT // BREAKING THE GRID // LOADING...">LEARNING WEB DEVELOPMENT // BREAKING THE GRID // LOADING...</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-24 px-6 max-w-[1440px] mx-auto">
+            <div class="flex flex-col mb-20">
+                <span class="font-mono text-acid-green text-sm mb-2 pl-1 uppercase tracking-widest">> EXECUTING PROJECT_DISPLAY_PROTOCOL...</span>
+                
+                <h1 class="text-[5rem] md:text-[9rem] font-black leading-[0.8] tracking-tighter uppercase text-white mix-blend-lighten">
+                    <span class="block scanline-text glitch-text" data-text="WORK_LOG">WORK_LOG</span>
+                    <span class="block text-stroke-1 opacity-30 relative left-4 md:left-8 text-transparent" style="-webkit-text-stroke: 2px rgba(255,255,255,0.5);">// ERROR</span>
+                </h1>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-y-16 md:gap-x-8">
+                <article class="md:col-span-12 group relative">
+                    <div class="w-full aspect-[21/9] overflow-hidden rounded-lg border border-white/10 bg-surface-dark relative">
+                        <div class="absolute inset-0 bg-gradient-to-r from-purple-900 to-black opacity-80"></div>
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop')] bg-cover bg-center opacity-60 mix-blend-overlay"></div>
+                        <div class="absolute bottom-0 left-0 w-full p-6 md:p-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
+                            <div>
+                                <h3 class="text-4xl md:text-6xl font-bold tracking-tighter text-white mb-2 font-stretch-ultra glitch-text" data-text="CYBER_ROT">CYBER_ROT</h3>
+                                <div class="flex gap-2 mb-4">
+                                    <span class="px-2 py-1 bg-black/50 border border-acid-green/30 text-acid-green text-xs font-mono">[YEAR: 2023]</span>
+                                    <span class="px-2 py-1 bg-black/50 border border-white/20 text-gray-300 text-xs font-mono">[TYPE: WEBGL]</span>
+                                </div>
+                                <p class="text-gray-300 max-w-lg font-mono text-sm border-l border-glitch-purple pl-3">Exploration of digital decay using real-time liquid distortion shaders.</p>
+                            </div>
+                            <a href="https://github.com/amar-295/recipe-page" target="_blank" class="px-6 py-3 border border-acid-green text-acid-green font-bold text-sm uppercase tracking-widest hover:bg-acid-green hover:text-black transition-all">View_Project_File</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="md:col-span-6 relative group cursor-pointer mt-8">
+                    <a href="https://lnkd.in/gMyqydzM" target="_blank" class="block h-full hover:scale-[1.01] transition-transform">
+                        <div class="h-full border-2 border-glitch-purple bg-surface-dark/80 relative overflow-hidden hover:shadow-[0_0_25px_rgba(127,13,242,0.3)] transition-shadow">
+                            <div class="absolute top-0 left-0 bg-glitch-purple text-white text-[10px] font-mono font-bold px-4 py-1 uppercase tracking-wider z-20">DIR: /PROJECTS/BLOG</div>
+                            <div class="aspect-video w-full border-b border-glitch-purple/30 relative overflow-hidden">
+                                <img alt="Blog Preview Card" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-500" src="preview.jpg"/>
+                                <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImgridIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik0gNDAgMCBMIDAgMCAwIDQwIiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMTI3LCAxMywgMjQyLCAwLjIpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiIC8+PC9zdmc+')] opacity-20 pointer-events-none"></div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-4xl font-bold text-white mb-3 uppercase group-hover:text-glitch-purple transition-colors glitch-text" data-text="Blog_Card_Project">Blog_Card_Project</h3>
+                                <div class="flex items-center gap-2 text-glitch-purple text-xs font-bold uppercase tracking-widest mt-6 group-hover:animate-pulse">
+                                    <span class="material-symbols-outlined text-base">lock_open</span> [Click_To_Decrypt]
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="md:col-span-6 relative group cursor-pointer mt-24">
+                    <a href="https://lnkd.in/gd_2mDz7" target="_blank" class="block h-full hover:scale-[1.01] transition-transform">
+                        <div class="h-full border-2 border-acid-green bg-surface-dark/80 relative overflow-hidden hover:shadow-[0_0_25px_rgba(204,255,0,0.3)] transition-shadow">
+                            <div class="absolute top-0 left-0 bg-acid-green text-black text-[10px] font-mono font-bold px-4 py-1 uppercase tracking-wider z-20">DIR: /PROJECTS/RECIPE</div>
+                            <div class="aspect-video w-full border-b border-acid-green/30 relative overflow-hidden">
+                                <img alt="Recipe Page" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-500" src="preview1.jpg"/>
+                                <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImgridIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik0gNDAgMCBMIDAgMCAwIDQwIiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjA0LCAyNTUsIDAsIDAuMikiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkMikiIC8+PC9zdmc+')] opacity-20 pointer-events-none"></div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-4xl font-bold text-white mb-3 uppercase group-hover:text-acid-green transition-colors glitch-text" data-text="Recipe_Page_Project">Recipe_Page_Project</h3>
+                                <div class="flex items-center gap-2 text-acid-green text-xs font-bold uppercase tracking-widest mt-6 group-hover:animate-pulse">
+                                    <span class="material-symbols-outlined text-base">lock_open</span> [Click_To_Access]
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="relative py-24 bg-[#120b18] border-y border-glitch-purple/20">
+            <div class="max-w-6xl mx-auto px-6 relative">
+                <div class="absolute -top-1 -left-1 w-8 h-8 border-t-2 border-l-2 border-neon-green"></div>
+                <div class="absolute -bottom-1 -right-1 w-8 h-8 border-b-2 border-r-2 border-neon-green"></div>
+                
+                <div class="text-center mb-16">
+                    <h2 class="text-neon-green text-xs font-mono mb-2 tracking-widest animate-pulse">SYSTEM_CAPABILITIES_DETECTED</h2>
+                    <h1 class="text-6xl font-bold uppercase glitch-text scanline-text mb-4" data-text="OPERATOR SKILLS">OPERATOR SKILLS</h1>
+                    <div class="h-px w-24 bg-gradient-to-r from-transparent via-glitch-purple to-transparent mx-auto"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div class="relative flex flex-col items-center p-8 bg-white/5 border border-glitch-purple/30 hover:border-neon-green hover:shadow-[0_0_30px_rgba(127,13,242,0.4)] transition-all group">
+                        <span class="material-symbols-outlined text-4xl text-glitch-purple mb-4 group-hover:text-neon-green transition-colors">html</span>
+                        <h3 class="text-xl font-bold text-white glitch-text" data-text="HTML 5">HTML 5</h3>
+                        <p class="text-xs text-gray-400 font-mono mt-2">&lt;div class="root"&gt;</p>
+                    </div>
+                    <div class="relative flex flex-col items-center p-8 bg-white/5 border border-glitch-purple/30 hover:border-neon-green hover:shadow-[0_0_30px_rgba(127,13,242,0.4)] transition-all group">
+                        <span class="material-symbols-outlined text-4xl text-glitch-purple mb-4 group-hover:text-neon-green transition-colors">css</span>
+                        <h3 class="text-xl font-bold text-white glitch-text" data-text="CSS 3">CSS 3</h3>
+                        <p class="text-xs text-gray-400 font-mono mt-2">display: grid;</p>
+                    </div>
+                    <div class="relative flex flex-col items-center p-8 bg-white/5 border border-glitch-purple/30 hover:border-neon-green hover:shadow-[0_0_30px_rgba(127,13,242,0.4)] transition-all group">
+                        <span class="material-symbols-outlined text-4xl text-glitch-purple mb-4 group-hover:text-neon-green transition-colors">memory</span>
+                        <h3 class="text-xl font-bold text-white glitch-text" data-text="Node.js">Node.js</h3>
+                        <p class="text-xs text-gray-400 font-mono mt-2">process.env</p>
+                    </div>
+                    <div class="relative flex flex-col items-center p-8 bg-white/5 border border-glitch-purple/30 hover:border-neon-green hover:shadow-[0_0_30px_rgba(127,13,242,0.4)] transition-all group">
+                        <span class="material-symbols-outlined text-4xl text-glitch-purple mb-4 group-hover:text-neon-green transition-colors">account_tree</span>
+                        <h3 class="text-xl font-bold text-white glitch-text" data-text="Git">Git</h3>
+                        <p class="text-xs text-gray-400 font-mono mt-2">git push --force</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 px-6 max-w-[1200px] mx-auto">
+            <header class="text-center mb-16 relative">
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-24 bg-neon-green/5 blur-3xl rounded-full"></div>
+                <h1 class="text-6xl font-bold text-white tracking-tight mb-2 glitch-text scanline-text" data-text="GITHUB_REPOS">
+                    GITHUB_<span class="text-neon-green">REPOS</span>
+                </h1>
+            </header>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <a href="https://github.com/amar-295/recipe-page" target="_blank" class="block bg-black/40 border border-[#294922] rounded-lg p-6 hover:border-neon-green hover:shadow-[0_0_20px_rgba(71,244,37,0.2)] transition-all cursor-pointer group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-2 bg-neon-green/10 text-neon-green rounded"><span class="material-symbols-outlined">terminal</span></div>
+                        <span class="text-[10px] font-mono text-gray-500 border border-gray-800 px-2 py-1 rounded">PUBLIC</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 font-mono group-hover:text-neon-green glitch-text" data-text="recipe-page">recipe-page</h3>
+                    <p class="text-gray-400 text-xs mb-6">A responsive recipe page solution.</p>
+                    <div class="flex items-center gap-2 text-xs font-mono text-gray-400"><span class="w-2 h-2 rounded-full bg-orange-500"></span> HTML/CSS</div>
+                </a>
+                <a href="https://github.com/amar-295/blog-preview-card" target="_blank" class="block bg-black/40 border border-[#294922] rounded-lg p-6 hover:border-glitch-purple hover:shadow-[0_0_20px_rgba(127,13,242,0.2)] transition-all cursor-pointer group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-2 bg-glitch-purple/10 text-glitch-purple rounded"><span class="material-symbols-outlined">hub</span></div>
+                        <span class="text-[10px] font-mono text-gray-500 border border-gray-800 px-2 py-1 rounded">PUBLIC</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 font-mono group-hover:text-glitch-purple glitch-text" data-text="blog-preview-card">blog-preview-card</h3>
+                    <p class="text-gray-400 text-xs mb-6">A semantic and accessible blog preview component.</p>
+                    <div class="flex items-center gap-2 text-xs font-mono text-gray-400"><span class="w-2 h-2 rounded-full bg-blue-500"></span> HTML/CSS</div>
+                </a>
+                <a href="https://github.com/amar-295/learning-js" target="_blank" class="block bg-black/40 border border-[#294922] rounded-lg p-6 hover:border-neon-green hover:shadow-[0_0_20px_rgba(71,244,37,0.2)] transition-all cursor-pointer group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-2 bg-neon-green/10 text-neon-green rounded"><span class="material-symbols-outlined">security</span></div>
+                        <span class="text-[10px] font-mono text-gray-500 border border-gray-800 px-2 py-1 rounded">PUBLIC</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 font-mono group-hover:text-neon-green glitch-text" data-text="learning-js">learning-js</h3>
+                    <p class="text-gray-400 text-xs mb-6">My personal JavaScript learning journey and experiments.</p>
+                    <div class="flex items-center gap-2 text-xs font-mono text-gray-400"><span class="w-2 h-2 rounded-full bg-yellow-500"></span> JavaScript</div>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 px-6 flex justify-center">
+            <div class="w-full max-w-[800px] relative">
+                <div class="absolute -inset-1 bg-gradient-to-r from-neon-green/20 to-glitch-purple/20 rounded-lg blur opacity-40"></div>
+                
+                <div class="relative bg-terminal-bg border border-neon-green/50 rounded-lg shadow-2xl overflow-hidden backdrop-blur-sm">
+                    <div class="h-8 bg-neon-green/10 border-b border-neon-green/30 flex items-center justify-between px-4">
+                        <div class="flex gap-2"><div class="w-3 h-3 rounded-full bg-red-500"></div><div class="w-3 h-3 rounded-full bg-yellow-500"></div><div class="w-3 h-3 rounded-full bg-green-500"></div></div>
+                        <div class="text-[10px] tracking-[0.2em] text-neon-green/60 font-bold uppercase">Secure_Connection_v2.0</div>
+                    </div>
+                    
+                    <div class="p-10 flex flex-col gap-8">
+                        <div class="text-center">
+                            <h2 class="text-4xl font-bold text-white tracking-tighter uppercase mb-2 glitch-text scanline-text" data-text="SYSTEM_LINK // CONTACT">SYSTEM_LINK // CONTACT</h2>
+                            <p class="text-neon-green/80 font-mono text-sm tracking-widest uppercase border-y border-neon-green/20 py-2 inline-block px-4">&lt; Initiate communication sequence... /&gt;</p>
+                        </div>
+                        
+                        <form class="flex flex-col gap-6" action="mailto:612amar@gmail.com" method="POST" enctype="text/plain">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="text-xs font-bold text-neon-green/70 mb-2 block uppercase">USER_ID</label>
+                                    <input type="text" name="name" placeholder="Enter Identity_" class="w-full bg-[#132210] border border-[#3a6831] text-white rounded p-3 font-mono focus:border-neon-green outline-none placeholder:text-neon-green/30">
+                                </div>
+                                <div>
+                                    <label class="text-xs font-bold text-neon-green/70 mb-2 block uppercase">DIGITAL_ADDRESS</label>
+                                    <input type="email" name="email" placeholder="Enter Email_" class="w-full bg-[#132210] border border-[#3a6831] text-white rounded p-3 font-mono focus:border-neon-green outline-none placeholder:text-neon-green/30">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="text-xs font-bold text-neon-green/70 mb-2 block uppercase">DATA_PACKET</label>
+                                <textarea name="message" placeholder="Input Message Data_" class="w-full bg-[#132210] border border-[#3a6831] text-white rounded p-3 h-32 font-mono focus:border-neon-green outline-none placeholder:text-neon-green/30 resize-none"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-neon-green/90 text-black font-bold text-lg uppercase py-4 rounded hover:bg-white hover:shadow-[0_0_20px_#47f425] transition-all flex items-center justify-center gap-2">
+                                <span class="material-symbols-outlined font-bold">send</span> EXECUTE_TRANSMISSION()
+                            </button>
+                        </form>
+                        
+                        <div class="flex flex-wrap justify-center gap-4 mt-4">
+                            <a href="https://www.linkedin.com/in/amarnath-webdev/" target="_blank" class="flex items-center gap-3 px-6 py-3 bg-[#132210] border border-glitch-purple/50 rounded hover:bg-glitch-purple/10 transition-all group">
+                                <svg class="w-5 h-5 fill-glitch-purple group-hover:fill-white transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                <span class="font-mono text-sm font-bold text-white uppercase">LINKEDIN</span>
+                            </a>
+                            <a href="https://github.com/amar-295" target="_blank" class="flex items-center gap-3 px-6 py-3 bg-[#132210] border border-glitch-purple/50 rounded hover:bg-glitch-purple/10 transition-all group">
+                                <svg class="w-5 h-5 fill-glitch-purple group-hover:fill-white transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                <span class="font-mono text-sm font-bold text-white uppercase">GITHUB</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="fixed bottom-0 w-full z-50 px-6 py-2 border-t border-white/5 bg-[#0a0510]/95 backdrop-blur-sm">
+        <div class="max-w-[1440px] mx-auto flex justify-between items-center text-[10px] md:text-xs font-mono text-gray-500 uppercase">
+            <div class="flex gap-6">
+                <span>Mem: <span class="text-neon-green">16GB</span></span>
+                <span>Loc: <span class="text-glitch-purple">EARTH-616</span></span>
+            </div>
+            <div class="flex gap-6">
+                <span>Stat: <span class="text-neon-green animate-pulse">ONLINE</span></span>
+                <span>Ver: 2.0.4</span>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
